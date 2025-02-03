@@ -3,7 +3,7 @@
 使用 KDE Connect 剪切板同步
 无需root，使之在 android 10+ 实现剪切板的自动同步
 
-先下载https://www.123684.com/s/dzfIjv-2OP5H工具，然后输入下列命令，敲回车键就行了
+先下载https://www.123684.com/s/dzfIjv-2OP5H  ADB命令工具，然后输入下列命令，敲回车键就行了
 
 即
 adb -d shell pm grant org.kde.kdeconnect_tp android.permission.READ_LOGS
