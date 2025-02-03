@@ -1,0 +1,14 @@
+（android 10+已禁止在后台读取剪贴板）
+
+使用 KDE Connect 剪切板同步
+无需root，使之在 android 10+ 实现剪切板的自动同步
+
+即
+adb -d shell pm grant org.kde.kdeconnect_tp android.permission.READ_LOGS
+adb -d shell appops set org.kde.kdeconnect_tp SYSTEM_ALERT_WINDOW allow
+adb -d shell am force-stop org.kde.kdeconnect_tp
+
+如果后悔，可以撤销、重置。
+adb -d shell pm revoke org.kde.kdeconnect_tp android.permission.READ_LOGS
+adb -d shell appops reset org.kde.kdeconnect_tp
+adb -d shell am force-stop org.kde.kdeconnect_tp 
