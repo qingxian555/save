@@ -1,0 +1,23 @@
+使用此教程的前提是解锁BootLoader，然后安装Magisk、LSPosed、AnyWebView v1.2版和Link2SD v4.3.4版
+
+ 首先用Link2SD获取root权限，然后卸载魅族自带的Android System WebView
+ 
+ 再在apkmirror下载谷歌版的Android System WebView，利用Link2SD转换谷歌版Android System WebView成为系统应用
+
+AnyWebView里面选择系统框架和谷歌版Android System WebView
+
+重启手机
+
+进入设置-关于手机-版本号，多点击几次版本号，解锁开发者选项
+
+然后进入设置-辅助功能-开发者选项-WebView实现，选择谷歌版Android System WebView就行了
+
+验证-安装via浏览器
+如果进入via浏览器显示空白，应该是没替换成功，重启下手机
+如果进入via浏览器有搜索框，那就搜索关键词“浏览器内核检测”，进去看到最新版的Android System WebView和版本号，说明替换成功了。
+
+后续更新
+
+谷歌商店是搜索不到Android System WebView正式版的
+
+打开via浏览器，更换搜索引擎为谷歌搜索，然后搜索Android System WebView，一般第一条结果都是带谷歌商店链接的Android System WebView，点进去之后，会跳转到谷歌商店APP，然后点击更新就行了。（Google play services更新也用此方法）
