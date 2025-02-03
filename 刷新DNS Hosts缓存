@@ -1,0 +1,10 @@
+使用快捷键win+R，再输入cmd
+
+刷新 DNS 缓存
+在命令提示符中输入以下命令：
+
+ipconfig /flushdns
+
+回车，刷新 DNS 解析缓存。
+
+至此，完成对 hosts 文件的修改。
