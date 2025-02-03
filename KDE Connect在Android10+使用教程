@@ -3,12 +3,19 @@
 使用 KDE Connect 剪切板同步
 无需root，使之在 android 10+ 实现剪切板的自动同步
 
+先下载PK工具，然后输入下列命令，敲回车键就行了
+
 即
 adb -d shell pm grant org.kde.kdeconnect_tp android.permission.READ_LOGS
 adb -d shell appops set org.kde.kdeconnect_tp SYSTEM_ALERT_WINDOW allow
 adb -d shell am force-stop org.kde.kdeconnect_tp
+//最好在安卓端打开KDE程序，再输入上面的命令，然后注意安卓端KDE的包名和命令里的包名是否一样
 
 如果后悔，可以撤销、重置。
 adb -d shell pm revoke org.kde.kdeconnect_tp android.permission.READ_LOGS
 adb -d shell appops reset org.kde.kdeconnect_tp
 adb -d shell am force-stop org.kde.kdeconnect_tp 
+
+(可能有用的信息：
+用户A:安卓13，息屏一分钟后就不行了，日志权限被系统ban了
+用户B:用adb给读取日志就行了)
